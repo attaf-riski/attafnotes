@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "953528556139",
+    "project_id": "attafnotes",
+    "storage_bucket": "attafnotes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953528556139:android:11688b72ee2608a78eef2e",
+        "android_client_info": {
+          "package_name": "io.github.atafLatihan.mynotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953528556139-k0nncrr04udehijp1ejp69l6ir09acap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqgnANMlmM6310b-4P6vzJTPu3oDO-r-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953528556139-k0nncrr04udehijp1ejp69l6ir09acap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
