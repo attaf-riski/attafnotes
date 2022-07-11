@@ -6,7 +6,6 @@ import 'package:mynotes/views/register_view.dart';
 import 'package:mynotes/views/verify_email_view.dart';
 
 import 'firebase_options.dart';
-import 'dart:developer' as devtools show log;
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,6 +27,7 @@ void main() {
     routes: {
       '/login/': (context) => const LoginView(),
       '/register/': (context) => const RegisterView(),
+      '/notes/': (context) => const NotesView()
     },
   ));
 }
@@ -53,7 +53,7 @@ class HomePage extends StatelessWidget {
                   return const VerifyEmailView();
                 }
               } else {
-                return LoginView();
+                return const LoginView();
               }
             default:
               return const CircularProgressIndicator();
@@ -86,8 +86,10 @@ class _NotesViewState extends State<NotesView> {
 
                   if (shouldLogOut) {
                     await FirebaseAuth.instance.signOut();
-                    Navigator.of(context)
-                        .pushNamedAndRemoveUntil('/login/', (route) => false);
+                    Navigator.of(context).pushNamedAndRemoveUntil(
+                      '/login/',
+                      (_) => false,
+                    );
                   }
 
                   break;
